@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVSCRIPT Calender-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="Render()">
+    <div class="runningtext">
+    <p id="runningtext">HELLO,I'am ROHIT WEB DEVELOPER, AND TIS IS CALENDER JAVASCRIPT</p>
+</div>
+    <div class="container">
+        <div class="calender">
+           <!--month area start--> 
+           
+            <div class="month">
+              <!--  <div  class="time">
+                    <span id="hr">21</span>:
+                    <span id="min">48</span>:
+                    <span id="sec"> 25</span>
+                    <span id="am">AM</span>
+                </div>
+            -->
+
+                <!--prev button-->
+                <div class="prev" onclick="moveDate('prev')"><span >&#10094</span></div>
+                <!--month details-->
+                <div class="monthdeatil">
+                    <h1 id="mon">DECEMBER</h1>
+                    <P id="datestr"></P>
+                </div>
+                <!--month details-->
+                <!--next button-->
+                <div class="next" onclick="moveDate('next')"><span>&#10095</span></div>
+            </div>
+        <!--month area end--> 
+            <div class="week">
+                <div class="weekdays">SUN</div>
+                <div class="weekdays">MON</div>
+                <div class="weekdays">TUE</div>
+                <div class="weekdays">WED</div>
+                <div class="weekdays">THU</div>
+                <div class="weekdays">FRI</div>
+                <div class="weekdays">SAT</div>
+            </div>
+            <div class="days">
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
